@@ -1,6 +1,6 @@
 # Cadastro de Horas Complementares
 
-O sistema de lançamento de horas complementares para o curso de Engenharia da Computação da UEMG Divinópoli tem como objetivo auxiliar no gerenciamento e cálculo das horas complementares de acordo com as regras do Projeto Pedagógico do Curso (PPC) aprovado no ano de 2021. O sistema possui as seguintes funcionalidades:
+O sistema de lançamento de horas complementares para o curso de Engenharia da Computação da UEMG Divinópolis tem como objetivo auxiliar no gerenciamento e cálculo das horas complementares de acordo com as regras do Projeto Pedagógico do Curso (PPC) aprovado no ano de 2021. O sistema possui as seguintes funcionalidades:
 
 Entrada de Dados:
 
