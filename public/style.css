@@ -1,0 +1,108 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-image: url('quadro.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+}
+
+div{
+    text-align: left;
+    font-size: 18px;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; /* Adiciona uma borda preta ao redor do texto */
+}
+
+h1{
+    text-align: center;
+    padding-top: 20px;
+    color: aqua;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; /* Adiciona uma borda preta ao redor do texto */
+}
+
+
+button{
+    color: #fff;
+    background-color: hsla(262, 91%, 46%, 0.937);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;  
+}
+
+.btnExcel-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adiciona uma margem superior para espaçamento */
+}
+
+
+input[type="text"], input[type="number"], select {
+    width: 100%; /* Define a largura dos campos como 100% do contêiner pai */
+    padding: 10px; /* Adiciona espaçamento interno */
+    margin: 5px 0 15px 0; /* Adiciona margem superior e inferior */
+    display: inline-block; /* Define o display como inline-block */
+    border: 1px solid #ccc; /* Adiciona uma borda cinza clara */
+    border-radius: 4px; /* Adiciona cantos arredondados */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total do elemento */
+    font-size: 16px; /* Define o tamanho da fonte */
+}
+
+.formulario{
+    border: 1px solid #000; /* Adiciona uma borda de 2px de largura, sólida e preta */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    max-width: 800px;/*largura máxima da div*/
+    margin: 0 auto; /* Centraliza a div horizontalmente */
+    background-color: white;
+}
+
+
+table {
+    width: 100%;
+    max-width: 850px;
+    border-collapse: collapse; /* Remove espaçamento entre as bordas das células */
+    border-spacing: 0; /* Remove espaçamento entre as células */
+    margin: 0 auto; /* Centraliza a tabela horizontalmente */
+    background-color: white;
+    
+}
+
+table, th, td {
+    border: 1px solid #000; /* Adiciona bordas à tabela, cabeçalhos e células */
+}
+
+th, td {
+    padding: 5px; /* Adiciona espaçamento interno às células */
+    text-align: center; /* Alinha o texto à esquerda */
+}
+
+caption {
+    caption-side: top; /* Posição do título da tabela (topo) */
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color:white;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; /* Adiciona uma borda preta ao redor do texto */
+
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro Horas Complemetares</title>
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+
+
+    </head>
+    <body>
+
+        <h1>Cadastro de Horas Complementares</h1>
+        <p>Preencha o formulário abaixo para realizar o cálculo de horas complementares</p>
+        <div class="formulario">
+            
+            <form id="formularioid">
+
+                <div class="atividade">
+                    <label for="nomeid"><strong>Atividade</strong></label>
+                    <input type="text" id="nomeid" placeholder="Digite o nome da atividade" name="nome"/>
+                    <br>
+                </div>
+
+                <div classe="horas">
+                    <label for="horasid"><strong>Total de Horas</strong></label>
+                    <input type="number" id="horasid" placeholder="Digite o total de horas" name="horas"/>
+                    <br>
+                </div>
+
+                <div class="classificacao">
+                    <label for="classificacaoAtv"><strong>Classificação da Atividade</strong> </label>
+                    <select id="classificacaoAtv" name="opcao">
+                        <option value="vazio" data-categoria="vazio"></option>
+                        <option value="Ensino" data-categoria="Ensino">Ensino</option>
+                        <option value="Pesquisa" data-categoria="Pesquisa">Pesquisa</option>
+                        <option value="Extensão" data-categoria="Extensao">Extensão</option>
+                    </select>
+                    <br>
+                </div>
+            </form>
+            <button type="button" id="btnSalvar">Cadastrar Atividade</button>
+        </div>
+        <br>
+       
+       
+        <br>
+       
+        <table id="tabelaid">
+            <caption>Resultado</caption>
+            <thead>
+                <tr>
+                    <th>Atividade</th>
+                    <th>Categoria</th>
+                    <th>Tipo de Atividade</th>
+                    <th>Horas Informadas</th>
+                    <th>Horas Aproveitadas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de dados serão adicionadas aqui -->
+            </tbody>
+        </table>
+        <br><br>
+
+        <table id="tabelaResultado">
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Total de Horas Acumuladas na Categoria</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de dados serão adicionadas aqui -->
+            </tbody>
+        </table>
+
+        <div class="btnExcel-container">
+            <button type="button" classe="btnExcel" onclick="gerarExcel()">Baixar Excel do Histórico de Atividades Cadastradas</button>
+        </div>
+        
+        <script src="script.js" defer></script> 
+        
+    </body>
+</html>
